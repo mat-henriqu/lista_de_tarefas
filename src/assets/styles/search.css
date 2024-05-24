@@ -1,0 +1,19 @@
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.search__input {
+    width: 380px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.search__label {
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 10px;
+}

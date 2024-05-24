@@ -1,0 +1,22 @@
+.filter-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+.filter-options__button {
+    width: 80px;
+    height: 25px;
+    background-color: #333974;
+    margin-right: 5px;
+    color: white;
+}
+
+.filter-options__select {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 125px;
+}

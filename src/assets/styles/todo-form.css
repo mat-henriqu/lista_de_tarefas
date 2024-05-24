@@ -1,0 +1,32 @@
+.todo-form {
+    padding-bottom: 1.5rem;
+}
+
+.todo-form__form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.input-select {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.todo-form__input {
+    width: 380px;
+    height: 17px;
+}
+
+.todo-form__select {
+    width: 125px;
+}
+
+.todo-form__button {
+    width: 85px;
+    height: 29px;
+    background-color: #333974;
+    color: white;
+}
