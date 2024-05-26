@@ -23,10 +23,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 650px;
+    min-width: 520px;
 }
 
 .text {
-    max-width: 445px;
+    max-width: 420px;
 }
 
