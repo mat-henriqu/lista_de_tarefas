@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
+import { toast } from 'react-toastify';
 
 const TodoForm = ({addTodo}) => {
     const [value, setValue] = useState('');
     const [category, setCategory] = useState('');
+
+    const notifySucess = () => toast.success("Tarefa criada com sucesso");
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -32,7 +35,7 @@ const TodoForm = ({addTodo}) => {
                     <option value="Pessoal">Pessoal</option>
                     <option value="Estudos">Estudos</option>
                 </select>
-                <button type='submit' className='todo-form__button'>Criar</button>
+                <button type='submit' className='todo-form__button' onClick={notifySucess}>Criar</button>
             </form>
         </div>
     )

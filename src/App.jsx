@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import './assets/styles/app.css';
 import './assets/styles/todo.css';
@@ -96,6 +98,11 @@ function App() {
         <hr />
         <br />
         <TodoForm addTodo={addTodo} />
+        <ToastContainer
+          position="bottom-center"
+          theme="dark"
+          autoClose={800}
+        />
       </div>
     </div>
   );

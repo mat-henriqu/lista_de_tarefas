@@ -16,7 +16,7 @@
 
 .todo {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    background: linear-gradient(#000000d5, #0000008f);
+    background: linear-gradient(#0000008f, #0000004f);
     margin: 15px;
     padding: 15px;
     border-radius: 6px;

@@ -1,9 +1,22 @@
 import React from 'react'
-
+import { toast } from 'react-toastify';
 
 const Todo = ({ todo, removeTodo, completeTodo }) => {
+    const notifySuccess = () => toast.success("Tarefa completada com sucesso");
+    const notifyExcluded = () => toast.info("Tarefa excluída com sucesso");
+
+    const handleComplete = (id) => {
+        completeTodo(id);
+        notifySuccess();
+    }
+
+    const handleRemove = (id) => {
+        removeTodo(id);
+        notifyExcluded();
+    }
+
     return (
-        <div className="todo" >
+        <div className="todo">
             <div
                 className="content"
                 style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}>
@@ -11,10 +24,10 @@ const Todo = ({ todo, removeTodo, completeTodo }) => {
                 <p className='category'>({todo.category})</p>
             </div>
             <div>
-                <button className='complete' onClick={() => completeTodo(todo.id)}>
+                <button className='complete' onClick={() => handleComplete(todo.id)}>
                     Completar
                 </button>
-                <button className='remove' onClick={() => removeTodo(todo.id)}>
+                <button className='remove' onClick={() => handleRemove(todo.id)}>
                     X
                 </button>
             </div>

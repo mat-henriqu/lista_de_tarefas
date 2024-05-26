@@ -2,6 +2,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: #ffffff;
     background-image: url('../img/wallpaperflare.com_wallpaper2.jpg');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
@@ -20,7 +21,7 @@ body {
     margin: 0 auto;
     box-shadow: rgba(247, 246, 246, 0.25) 0px 30px 60px -12px inset, rgba(243, 242, 242, 0.3) 0px 18px 36px -18px inset;
     border-radius: 6px;
-    background-color:rgba(0, 0, 0, 0.7);
+    background-color:rgba(0, 0, 0, 0.3);
 }
 
 h1 {
