@@ -101,7 +101,7 @@ function App() {
         <ToastContainer
           position="bottom-center"
           theme="dark"
-          autoClose={800}
+          autoClose={1200}
         />
       </div>
     </div>

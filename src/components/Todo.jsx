@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const Todo = ({ todo, removeTodo, completeTodo }) => {
     const notifySuccess = () => toast.success("Tarefa marcada como completa");
     const notifyUncomplete = () => toast.info("Tarefa marcada como incompleta");
-    const notifyExcluded = () => toast.info("Tarefa excluída com sucesso");
+    const notifyExcluded = () => toast.warn("Tarefa excluída com sucesso");
 
     const handleComplete = (id) => {
         completeTodo(id);
