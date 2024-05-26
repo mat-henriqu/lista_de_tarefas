@@ -2,12 +2,17 @@ import React from 'react'
 import { toast } from 'react-toastify';
 
 const Todo = ({ todo, removeTodo, completeTodo }) => {
-    const notifySuccess = () => toast.success("Tarefa completada com sucesso");
+    const notifySuccess = () => toast.success("Tarefa marcada como concluída");
+    const notifyUncomplete = () => toast.info("Tarefa marcada como não concluída");
     const notifyExcluded = () => toast.info("Tarefa excluída com sucesso");
 
     const handleComplete = (id) => {
         completeTodo(id);
-        notifySuccess();
+        if (todo.isCompleted) {
+            notifyUncomplete();
+        } else {
+            notifySuccess();
+        }
     }
 
     const handleRemove = (id) => {
@@ -25,7 +30,7 @@ const Todo = ({ todo, removeTodo, completeTodo }) => {
             </div>
             <div>
                 <button className='complete' onClick={() => handleComplete(todo.id)}>
-                    Completar
+                    {todo.isCompleted ? "Desconcluída" : "Concluída"}
                 </button>
                 <button className='remove' onClick={() => handleRemove(todo.id)}>
                     X
