@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import './assets/styles/app.css';
@@ -21,7 +21,7 @@ function App() {
     return savedTodos ? JSON.parse(savedTodos) : [
       {
         id: 1,
-        text: "Ir pra academia",
+        text: "Criar Tarefas!",
         category: "Pessoal",
         isCompleted: false,
       }
